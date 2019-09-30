@@ -8,6 +8,7 @@ import org.slf4j.LoggerFactory;
 
 import com.datastax.oss.driver.api.core.CqlIdentifier;
 import com.datastax.oss.driver.api.core.CqlSession;
+import com.datastax.oss.driver.api.core.type.DataTypes;
 import com.datastax.oss.driver.api.querybuilder.QueryBuilder;
 import com.datastax.oss.driver.api.querybuilder.SchemaBuilder;
 
@@ -40,9 +41,17 @@ public class Utilities {
                 .build());
     }
     
-    public static void createTableUser(CqlSession cqlSession) {
-        
-        
+    public static void createTableUser(CqlSession cqlSession, String keyspaceName) {
+        cqlSession.execute(
+                SchemaBuilder.createTable(keyspaceName, "users")
+                .ifNotExists()
+                .withPartitionKey("lastname", DataTypes.TEXT)
+                .withColumn("firstname", DataTypes.TEXT)
+                .withColumn("age", DataTypes.INT)
+                .withColumn("city", DataTypes.TEXT)
+                .withColumn("email", DataTypes.TEXT)
+                .build());
+        LOGGER.info("Table '{}' has been ", "users");
     }
     
     public static void dropKeyspace(CqlSession cqlSession, String keyspacename) {
