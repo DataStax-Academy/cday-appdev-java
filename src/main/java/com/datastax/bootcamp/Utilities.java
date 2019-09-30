@@ -1,5 +1,6 @@
 package com.datastax.bootcamp;
 
+import java.util.HashMap;
 import java.util.Map;
 
 import org.slf4j.Logger;
@@ -30,10 +31,12 @@ public class Utilities {
     }
     
     public static void createKeyspace(CqlSession cqlSession, String keyspaceName, String dataCenterName, int rf) {
+        Map <String, Integer> dcs = new HashMap<String, Integer>();
+        dcs.put(dataCenterName, rf);
         cqlSession.execute(SchemaBuilder
                 .createKeyspace(CqlIdentifier.fromInternal(keyspaceName))
                 .ifNotExists()
-                .withNetworkTopologyStrategy(Map.of(dataCenterName, rf))
+                .withNetworkTopologyStrategy(dcs)
                 .build());
     }
     

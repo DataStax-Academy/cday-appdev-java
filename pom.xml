@@ -11,7 +11,7 @@
 		<encoding>UTF-8</encoding>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-		<version.jdk>11</version.jdk>
+		<version.jdk>1.8</version.jdk>
 		<version.maven.plugin.compiler>3.8.0</version.maven.plugin.compiler>
 		<oss-java-driver.version>4.0.1</oss-java-driver.version>
 	</properties>
@@ -43,6 +43,8 @@
 					<version>${version.maven.plugin.compiler}</version>
 					<configuration>
 						<release>${version.jdk}</release>
+						<source>${version.jdk}</source>
+						<target>${version.jdk}</target>
 					</configuration>
 				</plugin>
 				</plugins>
