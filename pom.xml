@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.datastax.bootcamp</groupId>
+	<artifactId>application-development-java</artifactId>
+	<version>1.0-SNAPSHOT</version>
+	
+	<properties>
+		<encoding>UTF-8</encoding>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<version.jdk>11</version.jdk>
+		<version.maven.plugin.compiler>3.8.0</version.maven.plugin.compiler>
+		<oss-java-driver.version>4.0.1</oss-java-driver.version>
+	</properties>
+	
+	<dependencies>
+		<dependency>
+			<groupId>com.datastax.oss</groupId>
+			<artifactId>java-driver-core</artifactId>
+			<version>${oss-java-driver.version}</version>
+		</dependency>
+		<dependency>
+	        <groupId>com.datastax.oss</groupId>
+	        <artifactId>java-driver-query-builder</artifactId>
+	        <version>${oss-java-driver.version}</version>
+        </dependency>
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-classic</artifactId>
+			<version>1.2.3</version>
+		</dependency>
+	</dependencies>
+	
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>${version.maven.plugin.compiler}</version>
+					<configuration>
+						<release>${version.jdk}</release>
+					</configuration>
+				</plugin>
+				</plugins>
+		</pluginManagement>
+	</build>
+
+</project>
