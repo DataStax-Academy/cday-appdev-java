@@ -13,7 +13,7 @@ import org.slf4j.LoggerFactory;
 
 import com.datastax.oss.driver.api.core.CqlSession;
 import com.datastax.oss.driver.api.core.cql.SimpleStatement;
-public class Exercice2_CreateSimpleStatement {
+public class Exercise2_CreateSimpleStatement {
 
     // Logger for the class
     private static final Logger LOGGER = LoggerFactory.getLogger("Exercice2");

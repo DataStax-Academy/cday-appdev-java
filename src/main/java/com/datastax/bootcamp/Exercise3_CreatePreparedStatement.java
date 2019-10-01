@@ -16,7 +16,7 @@ import com.datastax.oss.driver.api.core.cql.BoundStatement;
 import com.datastax.oss.driver.api.core.cql.PreparedStatement;
 import com.datastax.oss.driver.api.core.cql.SimpleStatement;
 
-public class Exercice3_CreatePreparedStatement {
+public class Exercise3_CreatePreparedStatement {
 
     // Logger for the class
     private static final Logger LOGGER = LoggerFactory.getLogger("Exercice3");
@@ -30,10 +30,7 @@ public class Exercice3_CreatePreparedStatement {
      * https://docs.datastax.com/en/developer/java-driver/4.2/manual/core/statements/prepared/#preparing
      */
     private static PreparedStatement prepareStatementOnce(CqlSession cqlSession) {
-        return cqlSession.prepare(
-                SimpleStatement.builder(""
-                        + "INSERT INTO users (firstName,lastName,age,city,email) "
-                        + "VALUES (?,?,?,?,?)").build());
+        return null;
     }
     
     /** 
@@ -47,7 +44,7 @@ public class Exercice3_CreatePreparedStatement {
     private static BoundStatement bindQuery(PreparedStatement queryInsertUser, 
             String firstName, String lastName, int age, String city, String email) {
         LOGGER.info(" + Insert {} {}", firstName, lastName);
-        return queryInsertUser.bind(firstName, lastName, age, city, email);
+        return null;
     }
     
     /** 

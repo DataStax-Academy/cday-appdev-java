@@ -16,7 +16,7 @@ import com.datastax.oss.driver.api.core.cql.PreparedStatement;
 import com.datastax.oss.driver.api.core.cql.ResultSet;
 import com.datastax.oss.driver.api.core.cql.SimpleStatement;
 
-public class Exercice4_ListUsers {
+public class Exercise4_ListUsers {
 
     // Logger for the class
     private static final Logger LOGGER = LoggerFactory.getLogger("Exercice4");
@@ -30,8 +30,7 @@ public class Exercice4_ListUsers {
      * https://docs.datastax.com/en/developer/java-driver/4.2/manual/core/#running-queries
      */
     private static void displayUsers(ResultSet rs) {
-        // to be removed
-        throw new RuntimeException("I didn't do my exercice");
+       throw new RuntimeException("I didn't do my exercice");
     }
     
     /** 

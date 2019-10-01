@@ -19,7 +19,7 @@ import com.datastax.oss.driver.api.core.session.Session;
  * 
  * @author DataStax Developer Team
  */
-public class Exercice1_ConnectAndCreateSchema {
+public class Exercise1_ConnectAndCreateSchema {
   
     // Logger for the class
     private static final Logger LOGGER = LoggerFactory.getLogger("Exercice1");
