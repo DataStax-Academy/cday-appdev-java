@@ -38,11 +38,7 @@ public class Exercice1_ConnectAndCreateSchema {
         LOGGER.info("Starting exercice 1...");
         
         // Change the line below to fill the builder object
-        try (CqlSession cqlSession = CqlSession.builder()
-                .addContactPoint(new InetSocketAddress(CONTACT_POINT_1, CASSANDRA_PORT))
-                .addContactPoint(new InetSocketAddress(CONTACT_POINT_2, CASSANDRA_PORT))
-                .withLocalDatacenter(DATACENTER_NAME)
-                .build()) {
+        try (CqlSession cqlSession = CqlSession.builder().build()) {
             
             // This utility method will create the keyspace you expect
             Utilities.createKeyspace(cqlSession, KEYSPACENAME, DATACENTER_NAME, 3);

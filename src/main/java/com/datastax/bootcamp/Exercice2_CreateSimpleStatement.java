@@ -34,10 +34,7 @@ public class Exercice2_CreateSimpleStatement {
      */
     private static SimpleStatement insertUserSimple(String firstName, String lastName, int age, String city, String email) {
         LOGGER.info(" + Insert {} {}", firstName, lastName);
-        return SimpleStatement
-                .builder("INSERT INTO users (firstName,lastName,age,city,email) VALUES (?,?,?,?,?)")
-                .addPositionalValues(firstName, lastName,age, city, email)
-                .build();
+        return SimpleStatement.builder("<YOUR_STATEMENT>").build();
     }
     
     /** 
@@ -66,7 +63,5 @@ public class Exercice2_CreateSimpleStatement {
         LOGGER.info("====      Exercice 2 - OK      ====");
         LOGGER.info("===================================");
     }
-    
-    
     
 }

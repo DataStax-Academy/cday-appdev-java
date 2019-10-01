@@ -14,14 +14,14 @@ public class ClusterSettings {
      * Please provide 2 nodes IP among the 3 that have been given to you this morning
      * You will have to provide them at each exercice
      */
-    public static final String  CONTACT_POINT_1   = "34.248.51.239";
-    public static final String  CONTACT_POINT_2   = "34.254.180.234";
+    public static final String  CONTACT_POINT_1   = "<Enter IP of node1>";
+    public static final String  CONTACT_POINT_2   = "<Enter IP of node2>";
     
     /** 
      * - ACTION #2 - 
      * 
      * Please provide a keyspace name, the you want (must be lowercase + no space)
      */
-    public static final String  KEYSPACENAME = "truc";
+    public static final String  KEYSPACENAME = "<Choose a keyspace name>";
     
 }
