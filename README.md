@@ -1,9 +1,6 @@
 <img src="https://s3.amazonaws.com/datastaxtraining/solution-days/cassandra-intro/DevDayBanner.png" height=200 />
 
-----
 # Application Development
-----
-
 
 ## Pre-requisite
 
@@ -15,7 +12,7 @@ To run the Application Development exercice on your laptop you must have install
 
 ## Setup your laptop
 
-This session will help you to setup your laptop to do the Exercices
+This session will help you to setup your laptop to do the Exercises
 
 ###1.Clone the repository where you are located the Exercices
 
@@ -51,7 +48,7 @@ cedricklunven@clunhost:~/dev/WORKSPACES/DATASTAX/cday-appdev-java> mvn clean ins
 Import the project as a `Java` project, a `pom.xml` has been provided to you.
 
 
-## Exercice 1
+## Exercise 1
 
 * Open the class `ClusterSettings`. And fill the 3 constants `CONTACT_POINT_1`, `CONTACT_POINT_2` and `KEYSPACENAME` as stated in the comment. 
 
@@ -68,7 +65,7 @@ CqlSession cqlSession = CqlSession.builder().build()
 - [Documentation Java Driver](https://docs.datastax.com/en/developer/java-driver/latest/manual/core)
 - [Documentation InetSocketAddress](https://docs.oracle.com/en/java/javase/12/docs/api/java.base/java/net/InetSocketAddress.html)
 
-## Exercice 2
+## Exercise 2
 
 * Open class `Exercice2_CreateSimpleStatement` and define a statement to insert a new users in the tables users
 
@@ -84,7 +81,7 @@ SimpleStatement.builder("<YOUR_STATEMENT>").build();
 
 
 
-## Exercice 3
+## Exercise 3
 
 * Open class `Exercice3_CreatePreparedStatement` and define `preparedStatement` in the following method
 
@@ -112,7 +109,7 @@ private static BoundStatement bindQuery(PreparedStatement queryInsertUser,
 
 After completing the exercice, you should be able to execute the request below
 
-## Exercice 4
+## Exercise 4
 
 * Open class `Exercice4_ListUsers` and implements the `displayUsers` to log FirstName and LastName of each row.
 
@@ -127,8 +124,8 @@ private static void displayUsers(ResultSet rs) {
 **Links that might be useful:**
  * [Documentation Statements](https://docs.datastax.com/en/developer/java-driver/4.2/manual/core/#running-queries)
 
----
-##END
+
+
 
 
 
