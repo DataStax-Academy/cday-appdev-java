@@ -1,6 +1,6 @@
 # Bootcamp Application Development
 
-<center>![Solution Day Banner](https://s3.amazonaws.com/datastaxtraining/solution-days/cassandra-intro/DevDayBanner.png "Developer Day Banner" )</center>
+<img src="https://s3.amazonaws.com/datastaxtraining/solution-days/cassandra-intro/DevDayBanner.png "Developer Day Banner" height=100 />
 
 ----
 
@@ -51,8 +51,6 @@ Import the project as a `Java` project, a `pom.xml` has been provided to you.
 
 
 ## Exercice 1
-----
-
 
 * Open the class `ClusterSettings`. And fill the 3 constants `CONTACT_POINT_1`, `CONTACT_POINT_2` and `KEYSPACENAME` as stated in the comment. 
 
@@ -69,8 +67,7 @@ CqlSession cqlSession = CqlSession.builder().build()
 - [Documentation Java Driver](https://docs.datastax.com/en/developer/java-driver/latest/manual/core)
 - [Documentation InetSocketAddress](https://docs.oracle.com/en/java/javase/12/docs/api/java.base/java/net/InetSocketAddress.html)
 
-#Exercice 2
-----
+## Exercice 2
 
 * Open class `Exercice2_CreateSimpleStatement` and define a statement to insert a new users in the tables users
 
@@ -86,8 +83,7 @@ SimpleStatement.builder("<YOUR_STATEMENT>").build();
 
 
 
-#Exercice 3
-----
+## Exercice 3
 
 * Open class `Exercice3_CreatePreparedStatement` and define `preparedStatement` in the following method
 
@@ -115,8 +111,7 @@ private static BoundStatement bindQuery(PreparedStatement queryInsertUser,
 
 After completing the exercice, you should be able to execute the request below
 
-#Exercice 4
-----
+## Exercice 4
 
 * Open class `Exercice4_ListUsers` and implements the `displayUsers` to log FirstName and LastName of each row.
 
@@ -131,6 +126,8 @@ private static void displayUsers(ResultSet rs) {
 **Links that might be useful:**
  * [Documentation Statements](https://docs.datastax.com/en/developer/java-driver/4.2/manual/core/#running-queries)
 
- 
+---
+##END
+
 
 
