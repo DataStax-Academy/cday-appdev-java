@@ -1,8 +1,9 @@
-# Bootcamp Application Development
-
-<img src="https://s3.amazonaws.com/datastaxtraining/solution-days/cassandra-intro/DevDayBanner.png" height=100 />
+<img src="https://s3.amazonaws.com/datastaxtraining/solution-days/cassandra-intro/DevDayBanner.png" height=200 />
 
 ----
+# Application Development
+----
+
 
 ## Pre-requisite
 
