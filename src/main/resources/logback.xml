@@ -13,9 +13,9 @@
     <logger name="com.datastax.oss.driver"  level= "ERROR"/>
     
     <logger name="BOOTCAMP"    				level= "INFO"/>
-    <logger name="Exercice1"  				level= "INFO"/>
-    <logger name="Exercice2"  				level= "INFO"/>
-    <logger name="Exercice3"  				level= "INFO"/>
-    <logger name="Exercice4"  				level= "INFO"/>
+    <logger name="Exercise1"  				level= "INFO"/>
+    <logger name="Exercise2"  				level= "INFO"/>
+    <logger name="Exercise3"  				level= "INFO"/>
+    <logger name="Exercise4"  				level= "INFO"/>
     
 </configuration>

@@ -16,10 +16,13 @@ import com.datastax.oss.driver.api.core.cql.PreparedStatement;
 import com.datastax.oss.driver.api.core.cql.ResultSet;
 import com.datastax.oss.driver.api.core.cql.SimpleStatement;
 
+/**
+ * With this Exercice you will learn how to read data from {@link ResultSet}.
+ */
 public class Exercise4_ListUsers {
 
     // Logger for the class
-    private static final Logger LOGGER = LoggerFactory.getLogger("Exercice4");
+    private static final Logger LOGGER = LoggerFactory.getLogger("Exercise4");
     
     /** 
      * - ACTION #1 - 
@@ -27,10 +30,10 @@ public class Exercise4_ListUsers {
      * Parse {@link ResultSet} to display firstname and lastname in the console.
      * 
      * Documentation:
-     * https://docs.datastax.com/en/developer/java-driver/4.2/manual/core/#running-queries
+     *  - https://docs.datastax.com/en/developer/java-driver/4.2/manual/core/#running-queries
      */
     private static void displayUsers(ResultSet rs) {
-       throw new RuntimeException("I didn't do my exercice");
+        throw new RuntimeException("Exercise4: displayUsers method should be implemented");
     }
     
     /** 
@@ -57,7 +60,7 @@ public class Exercise4_ListUsers {
             displayUsers(rs);
         }
         LOGGER.info("===================================");
-        LOGGER.info("Exercice 4 OK.");
+        LOGGER.info("====      Exercise 4 - OK      ====");
         LOGGER.info("===================================");
     }
     

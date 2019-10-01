@@ -16,21 +16,24 @@ import com.datastax.oss.driver.api.core.cql.BoundStatement;
 import com.datastax.oss.driver.api.core.cql.PreparedStatement;
 import com.datastax.oss.driver.api.core.cql.SimpleStatement;
 
+/**
+ * With this Exercice you will prepare your previous {@link SimpleStatement} to get a {@link PreparedStatement}.
+ */
 public class Exercise3_CreatePreparedStatement {
 
     // Logger for the class
-    private static final Logger LOGGER = LoggerFactory.getLogger("Exercice3");
+    private static final Logger LOGGER = LoggerFactory.getLogger("Exercise3");
    
     /** 
      * - ACTION #1 - 
      * 
-     * Based on the work you did in previous exercice please prepard your insert statement
+     * Based on the work you did in previous exercise, prepare the insert statement
      * 
      * Documentation:
-     * https://docs.datastax.com/en/developer/java-driver/4.2/manual/core/statements/prepared/#preparing
+     *  - https://docs.datastax.com/en/developer/java-driver/4.2/manual/core/statements/prepared/#preparing
      */
     private static PreparedStatement prepareStatementOnce(CqlSession cqlSession) {
-        return null;
+        throw new RuntimeException("Exercise3: prepareStatementOnce method should be implemented");
     }
     
     /** 
@@ -39,19 +42,20 @@ public class Exercise3_CreatePreparedStatement {
      * Use the prepared statement to bind parameters and create a {@link BoundStatement}.
      * 
      * Documentation:
-     * https://docs.datastax.com/en/developer/java-driver/4.2/manual/core/statements/prepared/#parameters-and-binding
+     *  - https://docs.datastax.com/en/developer/java-driver/4.2/manual/core/statements/prepared/#parameters-and-binding
      */
     private static BoundStatement bindQuery(PreparedStatement queryInsertUser, 
             String firstName, String lastName, int age, String city, String email) {
         LOGGER.info(" + Insert {} {}", firstName, lastName);
-        return null;
+        // Change this line with the correct BoundStatement 
+        throw new RuntimeException("Exercise3: bindQuery method should be implemented");
     }
     
     /** 
      * Main CLASS
      */
     public static void main(String[] args) {
-        LOGGER.info("Starting exercice 3...");
+        LOGGER.info("Starting exercise 3...");
         
         try (CqlSession cqlSession = CqlSession.builder()
                 .addContactPoint(new InetSocketAddress(CONTACT_POINT_1, CASSANDRA_PORT))
@@ -69,7 +73,7 @@ public class Exercise3_CreatePreparedStatement {
             cqlSession.execute(bindQuery(query, "Ramsay", "Bolton", 42, "CastleRock", "ramsay@got.com"));
         }
         LOGGER.info("===================================");
-        LOGGER.info("Exercice 3 OK.");
+        LOGGER.info("====      Exercise 3 - OK      ====");
         LOGGER.info("===================================");
     }
     
