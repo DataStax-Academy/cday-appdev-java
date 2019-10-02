@@ -33,6 +33,9 @@ public class Exercise3_CreatePreparedStatement {
      *  - https://docs.datastax.com/en/developer/java-driver/4.2/manual/core/statements/prepared/#preparing
      */
     private static PreparedStatement prepareStatementOnce(CqlSession cqlSession) {
+        // Change the line below to 
+        // (1) Define the SimpleStatement (no need for addPositionalValues this time) 
+        // (2) Use cqlSession to prepare the simpleStatement and return a PreparedStatement
         throw new RuntimeException("Exercise3: prepareStatementOnce method should be implemented");
     }
     
@@ -47,7 +50,7 @@ public class Exercise3_CreatePreparedStatement {
     private static BoundStatement bindQuery(PreparedStatement queryInsertUser, 
             String firstName, String lastName, int age, String city, String email) {
         LOGGER.info(" + Insert {} {}", firstName, lastName);
-        // Change this line with the correct BoundStatement 
+        // Change this line to create and return the expected BoundStatement 
         throw new RuntimeException("Exercise3: bindQuery method should be implemented");
     }
     

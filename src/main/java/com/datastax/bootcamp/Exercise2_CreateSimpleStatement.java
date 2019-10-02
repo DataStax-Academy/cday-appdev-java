@@ -15,7 +15,7 @@ import com.datastax.oss.driver.api.core.CqlSession;
 import com.datastax.oss.driver.api.core.cql.SimpleStatement;
 
 /**
- * With this class you will learn how to create a {@link SimpleStatement} object
+ * With this Exercise you will learn how to create a {@link SimpleStatement} object
  */
 public class Exercise2_CreateSimpleStatement {
 
